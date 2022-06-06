@@ -2,7 +2,7 @@
   "name": "@osn/ipfs",
   "version": "0.0.1",
   "main": "src/index.js",
-  "repository": "git@github.com:opensquare-network/scan-common.git",
+  "repository": "git@github.com:opensquare-network/ipfs.git",
   "author": "Yongfeng LI <yongfeng@opensquare.network>",
   "license": "Apache-2.0",
   "licenses": [
