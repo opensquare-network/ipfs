@@ -1,4 +1,4 @@
-const IPFS_TIMEOUT = "5s";
+const IPFS_TIMEOUT = "30s";
 
 module.exports = {
   IPFS_TIMEOUT,
