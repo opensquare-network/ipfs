@@ -14,7 +14,7 @@
   "scripts": {},
   "dependencies": {
     "dotenv": "^16.0.0",
-    "ipfs-http-client": "^56.0.1",
+    "ipfs-http-client": "^60.0.1",
     "it-all": "^1.0.6"
   }
 }
