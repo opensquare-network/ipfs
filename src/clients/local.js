@@ -1,5 +1,5 @@
 const { IPFS_TIMEOUT } = require("./common");
-const { create } = require("ipfs-http-client");
+
 let client;
 
 /**
@@ -7,7 +7,9 @@ let client;
  * @param url: local ipfs node ip or url, like '127.0.0.1'
  * @returns {IPFSHTTPClient}
  */
-function getLocalClient(url) {
+async function getLocalClient(url) {
+  const { create } = await import("kubo-rpc-client");
+
   if (!client) {
     const urlObj = new URL(url);
     client = create({
@@ -21,6 +23,4 @@ function getLocalClient(url) {
   return client;
 }
 
-module.exports = {
-  getLocalClient,
-};
+module.exports = { getLocalClient };
