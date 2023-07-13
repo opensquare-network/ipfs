@@ -1,5 +1,5 @@
 const { IPFS_TIMEOUT } = require("./common");
-const { create } = require("ipfs-http-client");
+
 let client;
 
 /**
@@ -8,24 +8,27 @@ let client;
  * @param projectSecret: the infura project secret
  * @returns {IPFSHTTPClient}
  */
-function getInfuraClient(projectId, projectSecret) {
-  const authorization = 'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
+async function getInfuraClient(projectId, projectSecret) {
+  const authorization =
+    "Basic " + Buffer.from(projectId + ":" + projectSecret).toString("base64");
 
-  if (!client) {
+    const { create } = await import("kubo-rpc-client");
+
+    if (!client) {
     client = create({
-      host: 'ipfs.infura.io',
+      host: "ipfs.infura.io",
       port: 5001,
-      protocol: 'https',
+      protocol: "https",
       timeout: IPFS_TIMEOUT,
       headers: {
         authorization,
       },
-    })
+    });
   }
 
-  return client
+  return client;
 }
 
 module.exports = {
   getInfuraClient,
-}
+};

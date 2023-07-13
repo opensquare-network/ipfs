@@ -7,24 +7,24 @@ const { getInfuraClient } = require("./infura");
  * @param clientOptions
  * @returns {IPFSHTTPClient[]}
  */
-function getClients(clientMode, clientOptions) {
+async function getClients(clientMode, clientOptions) {
   if (clientMode.mode === 0) {
     return [
-      getInfuraClient(
+      await getInfuraClient(
         clientOptions.infuraProjectId,
         clientOptions.infuraProjectSecret
       ),
-      getLocalClient(clientOptions.localNodeIpOrUrl),
+      await getLocalClient(clientOptions.localNodeIpOrUrl),
     ];
   }
 
   if (clientMode.mode === 1) {
-    return [getLocalClient(clientOptions.localNodeIpOrUrl)];
+    return [await getLocalClient(clientOptions.localNodeIpOrUrl)];
   }
 
   if (clientMode.mode === 2) {
     return [
-      getInfuraClient(
+      await getInfuraClient(
         clientOptions.infuraProjectId,
         clientOptions.infuraProjectSecret
       ),
