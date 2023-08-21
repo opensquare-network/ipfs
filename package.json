@@ -14,7 +14,7 @@
   "scripts": {},
   "dependencies": {
     "dotenv": "^16.3.1",
-    "it-all": "^3.0.2",
+    "it-all": "^3.0.3",
     "kubo-rpc-client": "^3.0.1"
   }
 }
