@@ -15,6 +15,7 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "it-all": "^3.0.2",
-    "kubo-rpc-client": "^3.0.1"
+    "kubo-rpc-client": "^5.1.0",
+    "undici": "^7.10.0"
   }
 }
