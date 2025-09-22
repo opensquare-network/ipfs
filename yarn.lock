@@ -192,12 +192,7 @@ braces@^3.0.3:
   dependencies:
     fill-range "^7.1.1"
 
-browser-readablestream-to-it@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/browser-readablestream-to-it/-/browser-readablestream-to-it-2.0.3.tgz#8c08c7c0d98aa1b4098fd19cb147a6028b188470"
-  integrity sha512-kFLXH4FWJNZbbIEeqZMCYfVPQx6glf3e1mReo3bB3xbn1o/YWbHsYpxIGo2rfNsmPqv7I+Fg4qObvtvbAq4DbA==
-
-browser-readablestream-to-it@^2.0.5:
+browser-readablestream-to-it@^2.0.0, browser-readablestream-to-it@^2.0.5:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/browser-readablestream-to-it/-/browser-readablestream-to-it-2.0.10.tgz#e37098be227623af21ee815af74d43ffb9307a6d"
   integrity sha512-I/9hEcRtjct8CzD9sVo9Mm4ntn0D+7tOVrjbPl69XAoOfgJ8NBdOQU+WX+5SHhcELJDb14mWt7zuvyqha+MEAQ==
@@ -434,10 +429,10 @@ it-to-stream@^1.0.0:
     p-fifo "^1.0.0"
     readable-stream "^3.6.0"
 
-kubo-rpc-client@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/kubo-rpc-client/-/kubo-rpc-client-5.1.0.tgz#06f9216b2b8a62487a150261b16fd941a75adb34"
-  integrity sha512-yTBoyEN1Ymwi0Tzi8+Mfxylg3BRAatzykih8jzwaJjfYCqKUEqCX+43m4X78CdTPRXyIHUbdI9N0DcKRwNwk+A==
+kubo-rpc-client@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/kubo-rpc-client/-/kubo-rpc-client-5.3.0.tgz#22dd142383b7764d6f20f45219518cca9a09f4c5"
+  integrity sha512-uky2WMSpXxA+GMNLOBLmpR5W7kSMvwCh72FKjz2PNhrB5frHiXboJbYhFewAJ9N0FNnC2E7VUerGqBDAfLSrQg==
   dependencies:
     "@ipld/dag-cbor" "^9.0.0"
     "@ipld/dag-json" "^10.0.0"
